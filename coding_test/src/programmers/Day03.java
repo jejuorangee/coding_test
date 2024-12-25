@@ -59,24 +59,24 @@ package programmers;
 // 3 ⊕ 12 = 312
 // 양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.
 // 단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.
-class Solution {
-    public int solution(int a, int b) {
-        String ab = String.valueOf(a) + String.valueOf(b);
-        int abValue = Integer.parseInt(ab);
-        
-        int abResult = 2 * a * b;
-        
-         if (abValue >= abResult) {
-            return abValue;
-        } else {
-            return abResult;
-        }
-    }
-}
+//class Solution {
+//    public int solution(int a, int b) {
+//        String ab = String.valueOf(a) + String.valueOf(b);
+//        int abValue = Integer.parseInt(ab);
+//        
+//        int abResult = 2 * a * b;
+//        
+//         if (abValue >= abResult) {
+//            return abValue;
+//        } else {
+//            return abResult;
+//        }
+//    }
+//}
 
 public class Day03 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+		//Solution sol = new Solution();
 		// 1.
 //		String num1 = sol.solution("aaaaa", "bbbbb");
 //		System.out.println(num1);
@@ -97,7 +97,7 @@ public class Day03 {
 		
 		// 5.
 //		int num5 = sol.solution(2, 91);
-		int num5 = sol.solution(91, 2);
-		System.out.println(num5);
+//		int num5 = sol.solution(91, 2);
+//		System.out.println(num5);
 	}
 }

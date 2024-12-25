@@ -51,7 +51,7 @@ public class Day02 {
 		String my_string = sc.next();
 		String overwrite_string = sc.next();
 		int s = sc.nextInt();
-		Solution sol = new Solution();
+		//Solution sol = new Solution();
 		//String answer = sol.solution(my_string,overwrite_string,s);
 		//System.out.println(answer);
 	}
