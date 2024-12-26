@@ -68,22 +68,22 @@ package programmers;
 //}
 
 // 5. 두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면 a - b를 return 하는 solution 함수를 작성해 주세요.
-class Solution {
-    public int solution(int a, int b, boolean flag) {
-        int answer = 0;
-        if(flag){
-            answer = a + b;
-        }
-        else {
-            answer = a - b;
-        }
-        return answer;
-    }
-}
+//class Solution {
+//    public int solution(int a, int b, boolean flag) {
+//        int answer = 0;
+//        if(flag){
+//            answer = a + b;
+//        }
+//        else {
+//            answer = a - b;
+//        }
+//        return answer;
+//    }
+//}
 
 public class Day04 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+		//Solution sol = new Solution();
 		// 1.
 //		int num1 = sol.solution(98, 2);
 //		int num2 = sol.solution(34, 3);
@@ -109,10 +109,10 @@ public class Day04 {
 //		System.out.println(num8);
 		
 		// 5.
-		int num9 = sol.solution(-4, 7, true);
-		int num10 = sol.solution(-4, 7, false);
-		System.out.println(num9);
-		System.out.println(num10);
+//		int num9 = sol.solution(-4, 7, true);
+//		int num10 = sol.solution(-4, 7, false);
+//		System.out.println(num9);
+//		System.out.println(num10);
 		
 	}
 }
