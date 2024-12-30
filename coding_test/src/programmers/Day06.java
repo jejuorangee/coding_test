@@ -100,34 +100,34 @@ package programmers;
 //각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 찾습니다.
 //각 쿼리의 순서에 맞게 답을 저장한 배열을 반환하는 solution 함수를 완성해 주세요.
 //단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.
-class Solution {
-    public int[] solution(int[] arr, int[][] queries) {
-        int[] answer = new int[queries.length];
-        for (int q = 0; q < queries.length; q++) {
-            int s = queries[q][0];
-            int e = queries[q][1];
-            int k = queries[q][2];
-            
-            int result = -1; // 기본값은 -1로 설정 (찾지 못할 경우)
-            
-            // s부터 e까지의 범위에서 k보다 큰 값 중 가장 작은 값
-            for (int i = s; i <= e; i++) {
-                if (arr[i] > k) {
-                    if (result == -1 || arr[i] < result) {
-                        result = arr[i]; // 현재 값이 더 작으면 갱신
-                    }
-                }
-            }
-            
-            answer[q] = result; // 결과에 답을 저장
-        }
-        return answer;
-    }
-}
+//class Solution {
+//    public int[] solution(int[] arr, int[][] queries) {
+//        int[] answer = new int[queries.length];
+//        for (int q = 0; q < queries.length; q++) {
+//            int s = queries[q][0];
+//            int e = queries[q][1];
+//            int k = queries[q][2];
+//            
+//            int result = -1; // 기본값은 -1로 설정 (찾지 못할 경우)
+//            
+//            // s부터 e까지의 범위에서 k보다 큰 값 중 가장 작은 값
+//            for (int i = s; i <= e; i++) {
+//                if (arr[i] > k) {
+//                    if (result == -1 || arr[i] < result) {
+//                        result = arr[i]; // 현재 값이 더 작으면 갱신
+//                    }
+//                }
+//            }
+//            
+//            answer[q] = result; // 결과에 답을 저장
+//        }
+//        return answer;
+//    }
+//}
 
 public class Day06 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		// 1.
 //		int[] num_list1 = {2,1,6};
 //		int[] num_list2 = {5,2,1,7,5};
@@ -163,13 +163,12 @@ public class Day06 {
 //		}
 				
 		// 5.
-		int[] arr = {0, 1, 2, 4, 3};
-		int[][] queries = {{0,4,2},{0,3,2},{0,2,2}};
-		
-		int[] num7 = sol.solution(arr, queries);
-		for (int i = 0; i < num7.length; i++) {
-			System.out.print(num7[i]);
-		}
-		
+//		int[] arr = {0, 1, 2, 4, 3};
+//		int[][] queries = {{0,4,2},{0,3,2},{0,2,2}};
+//		
+//		int[] num7 = sol.solution(arr, queries);
+//		for (int i = 0; i < num7.length; i++) {
+//			System.out.print(num7[i]w);
+//		}
 	}
 }
