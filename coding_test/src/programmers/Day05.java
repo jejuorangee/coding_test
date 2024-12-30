@@ -98,27 +98,27 @@ package programmers;
 //}
 
 // 5. 정수가 담긴 리스트 num_list가 주어집니다. num_list의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.
-class Solution {
-    public int solution(int[] num_list) {
-        int answer = 0;
-        String a = "";
-        String b = "";
-        for(int i=0; i<num_list.length; i++){
-            if(num_list[i]%2 == 0){
-                a += num_list[i];
-            }
-            else {
-                b += num_list[i];
-            }
-        }
-        answer = Integer.parseInt(a)+Integer.parseInt(b);
-        return answer;
-    }
-}
+//class Solution {
+//    public int solution(int[] num_list) {
+//        int answer = 0;
+//        String a = "";
+//        String b = "";
+//        for(int i=0; i<num_list.length; i++){
+//            if(num_list[i]%2 == 0){
+//                a += num_list[i];
+//            }
+//            else {
+//                b += num_list[i];
+//            }
+//        }
+//        answer = Integer.parseInt(a)+Integer.parseInt(b);
+//        return answer;
+//    }
+//}
 
 public class Day05 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		// 1.
 //		String num1 = sol.solution("abc1abc1abc");
 //		System.out.println(num1);
@@ -155,12 +155,12 @@ public class Day05 {
 //		System.out.println(num8);
 		
 		// 5.
-		int[] num_list1 = {3,4,5,2,1};
-		int[] num_list2 = {5,7,8,3};
-		
-		int num9 = sol.solution(num_list1);
-		int num10 = sol.solution(num_list2);
-		System.out.println(num9);
-		System.out.println(num10);
+//		int[] num_list1 = {3,4,5,2,1};
+//		int[] num_list2 = {5,7,8,3};
+//		
+//		int num9 = sol.solution(num_list1);
+//		int num10 = sol.solution(num_list2);
+//		System.out.println(num9);
+//		System.out.println(num10);
 	}
 }
