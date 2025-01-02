@@ -115,44 +115,44 @@ import java.util.Stack;
 //stk에 원소가 있고, stk의 마지막 원소가 arr[i]보다 작으면 arr[i]를 stk의 뒤에 추가하고 i에 1을 더합니다.
 //stk에 원소가 있는데 stk의 마지막 원소가 arr[i]보다 크거나 같으면 stk의 마지막 원소를 stk에서 제거합니다.
 //위 작업을 마친 후 만들어진 stk를 return 하는 solution 함수를 완성해 주세요.
-class Solution {
-    public int[] solution(int[] arr) {
-        // 스택을 사용하여 처리할 배열 생성
-        Stack<Integer> stk = new Stack<>();
-        
-        // i는 배열 arr의 인덱스를 추적하는 변수
-        int i = 0;
-        
-        // arr 배열을 순차적으로 처리
-        while (i < arr.length) {
-            // 1. 스택이 비어있거나, 스택의 마지막 원소가 현재 arr[i]보다 작은 경우
-            //    arr[i]를 스택에 추가
-            if (stk.isEmpty() || stk.peek() < arr[i]) { // stk.peek() 마지막 원소
-                stk.push(arr[i]);  // arr[i]를 스택에 추가
-                i++;  // 인덱스 i를 증가시켜서 다음 원소로 이동
-            } else {
-                // 2. 스택의 마지막 원소가 arr[i]보다 크거나 같은 경우
-                //    스택의 마지막 원소를 제거
-                stk.pop();
-            }
-        }
-        
-        // 스택에 담긴 값을 배열로 반환하기 위해 배열 크기만큼 새로운 배열 생성
-        int[] answer = new int[stk.size()];
-        
-        // 스택의 원소를 배열에 담기
-        // 스택의 마지막 원소부터 배열에 넣기 위해서 뒤에서부터 순차적으로 넣음
-        for (int j = stk.size() - 1; j >= 0; j--) {
-            answer[j] = stk.pop();  // 스택에서 하나씩 꺼내 배열에 저장
-        }
-        
-        return answer;  // 결과 배열 반환
-    }
-}
+//class Solution {
+//    public int[] solution(int[] arr) {
+//        // 스택을 사용하여 처리할 배열 생성
+//        Stack<Integer> stk = new Stack<>();
+//        
+//        // i는 배열 arr의 인덱스를 추적하는 변수
+//        int i = 0;
+//        
+//        // arr 배열을 순차적으로 처리
+//        while (i < arr.length) {
+//            // 1. 스택이 비어있거나, 스택의 마지막 원소가 현재 arr[i]보다 작은 경우
+//            //    arr[i]를 스택에 추가
+//            if (stk.isEmpty() || stk.peek() < arr[i]) { // stk.peek() 마지막 원소
+//                stk.push(arr[i]);  // arr[i]를 스택에 추가
+//                i++;  // 인덱스 i를 증가시켜서 다음 원소로 이동
+//            } else {
+//                // 2. 스택의 마지막 원소가 arr[i]보다 크거나 같은 경우
+//                //    스택의 마지막 원소를 제거
+//                stk.pop();
+//            }
+//        }
+//        
+//        // 스택에 담긴 값을 배열로 반환하기 위해 배열 크기만큼 새로운 배열 생성
+//        int[] answer = new int[stk.size()];
+//        
+//        // 스택의 원소를 배열에 담기
+//        // 스택의 마지막 원소부터 배열에 넣기 위해서 뒤에서부터 순차적으로 넣음
+//        for (int j = stk.size() - 1; j >= 0; j--) {
+//            answer[j] = stk.pop();  // 스택에서 하나씩 꺼내 배열에 저장
+//        }
+//        
+//        return answer;  // 결과 배열 반환
+//    }
+//}
 
 public class Day07 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		// 1.
 //		int[] arr = {0, 1, 2, 4, 3};
 //		int[][] queries = {{0, 4, 1}, {0, 3, 2}, {0, 3, 3}};
@@ -189,10 +189,10 @@ public class Day07 {
 //		}
 		
 		// 5.
-		int[] arr = {1, 4, 2, 5, 3};
-		int[] test1 = sol.solution(arr);
-		for(int i : test1) {
-			System.out.print(i);
-		}
+//		int[] arr = {1, 4, 2, 5, 3};
+//		int[] test1 = sol.solution(arr);
+//		for(int i : test1) {
+//			System.out.print(i);
+//		}
 	}
 }
