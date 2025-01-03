@@ -81,33 +81,33 @@ import java.util.Arrays;
 
 // 5. 문자열 my_string과 이차원 정수 배열 queries가 매개변수로 주어집니다. queries의 원소는 [s, e] 형태로,
 //my_string의 인덱스 s부터 인덱스 e까지를 뒤집으라는 의미입니다. my_string에 queries의 명령을 순서대로 처리한 후의 문자열을 return 하는 solution 함수를 작성해 주세요.
-class Solution {
-    public String solution(String my_string, int[][] queries) {
-        StringBuilder answer = new StringBuilder(my_string);
-
-        // 각 쿼리에 대해 해당 부분 문자열을 뒤집기
-        for (int[] query : queries) {
-            int s = query[0];  // 시작 인덱스
-            int e = query[1];  // 끝 인덱스
-            
-            // 해당 범위의 부분 문자열을 뒤집기
-            while (s < e) {
-                // 인덱스 s와 e 문자를 교환
-                char temp = answer.charAt(s);
-                answer.setCharAt(s, answer.charAt(e));
-                answer.setCharAt(e, temp);
-                
-                s++;
-                e--;
-            }
-        }
-        return answer.toString();
-    }
-}
+//class Solution {
+//    public String solution(String my_string, int[][] queries) {
+//        StringBuilder answer = new StringBuilder(my_string);
+//
+//        // 각 쿼리에 대해 해당 부분 문자열을 뒤집기
+//        for (int[] query : queries) {
+//            int s = query[0];  // 시작 인덱스
+//            int e = query[1];  // 끝 인덱스
+//            
+//            // 해당 범위의 부분 문자열을 뒤집기
+//            while (s < e) {
+//                // 인덱스 s와 e 문자를 교환
+//                char temp = answer.charAt(s);
+//                answer.setCharAt(s, answer.charAt(e));
+//                answer.setCharAt(e, temp);
+//                
+//                s++;
+//                e--;
+//            }
+//        }
+//        return answer.toString();
+//    }
+//}
 
 public class Day08 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 
 		// 1.
 //      System.out.println(sol.solution(false, true, true, true));  // true
@@ -131,9 +131,9 @@ public class Day08 {
 //	    System.out.println(sol.solution("78720646226947352489"));
 		
 		// 5.
-		String my_string = "rermgorpsam";
-        int[][] queries = {{2, 3}, {0, 7}, {5, 9}, {6, 10}};
-        System.out.println(sol.solution(my_string, queries));  // "programmers"
+//		String my_string = "rermgorpsam";
+//      int[][] queries = {{2, 3}, {0, 7}, {5, 9}, {6, 10}};
+//      System.out.println(sol.solution(my_string, queries));  // "programmers"
 
 	}
 }
