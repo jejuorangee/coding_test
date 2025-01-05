@@ -67,20 +67,20 @@ import java.util.List;
 
 // 5. 어떤 문자열에 대해서 접미사는 특정 인덱스부터 시작하는 문자열을 의미합니다. 예를 들어, "banana"의 모든 접미사는 "banana", "anana", "nana", "ana", "na", "a"입니다.
 //문자열 my_string과 is_suffix가 주어질 때, is_suffix가 my_string의 접미사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.
-class Solution {
-    public int solution(String my_string, String is_suffix) {
-        // endWith() ~로 끝나는지 확인
-        if (my_string.endsWith(is_suffix)) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-}
+//class Solution {
+//    public int solution(String my_string, String is_suffix) {
+//        // endWith() ~로 끝나는지 확인
+//        if (my_string.endsWith(is_suffix)) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+//    }
+//}
 
 public class Day09 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		String[] intStrs = {"0123456789", "9876543210", "9999999999999"};
@@ -109,20 +109,20 @@ public class Day09 {
 //		System.out.println(Arrays.toString(sol.solution(myString2)));
 		
 		// 5.
-		String myString1 = "banana";
-		String isSuffix1 = "ana";
-		System.out.println(sol.solution(myString1, isSuffix1));  // 1
-		
-		String myString2 = "banana";
-		String isSuffix2 = "nan";
-		System.out.println(sol.solution(myString2, isSuffix2));  // 0
-		
-		String myString3 = "banana";
-		String isSuffix3 = "wxyz";
-		System.out.println(sol.solution(myString3, isSuffix3));  // 0
-		
-		String myString4 = "banana";
-		String isSuffix4 = "abanana";
-		System.out.println(sol.solution(myString4, isSuffix4));  // 0
+//		String myString1 = "banana";
+//		String isSuffix1 = "ana";
+//		System.out.println(sol.solution(myString1, isSuffix1));  // 1
+//		
+//		String myString2 = "banana";
+//		String isSuffix2 = "nan";
+//		System.out.println(sol.solution(myString2, isSuffix2));  // 0
+//		
+//		String myString3 = "banana";
+//		String isSuffix3 = "wxyz";
+//		System.out.println(sol.solution(myString3, isSuffix3));  // 0
+//		
+//		String myString4 = "banana";
+//		String isSuffix4 = "abanana";
+//		System.out.println(sol.solution(myString4, isSuffix4));  // 0
 	}
 }
