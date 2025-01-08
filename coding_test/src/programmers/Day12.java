@@ -143,28 +143,28 @@ import java.util.Arrays;
 //짝수 인덱스에서는 arr에서 query[i]번 인덱스를 제외하고 배열의 query[i]번 인덱스 뒷부분을 잘라서 버립니다.
 //홀수 인덱스에서는 arr에서 query[i]번 인덱스는 제외하고 배열의 query[i]번 인덱스 앞부분을 잘라서 버립니다.
 //위 작업을 마친 후 남은 arr의 부분 배열을 return 하는 solution 함수를 완성해 주세요.
-class Solution {
-    public int[] solution(int[] arr, int[] query) {
-        // copyOfRange(int[] original, int from, int to)
-        // original: 복사할 원본 배열
-        // from: 복사를 시작할 인덱스(포함o)
-        // to: 복사를 끝낼 인덱스(포함x)
-        
-        for (int i = 0; i < query.length; i++) {
-            int q = query[i];
-            if (i % 2 == 0) {  // 짝수 인덱스
-                arr = Arrays.copyOfRange(arr, 0, q + 1);  // arr의 앞부분을 잘라냄
-            } else {  // 홀수 인덱스
-                arr = Arrays.copyOfRange(arr, q, arr.length);  // 제일 앞부분 하나만 잘라냄
-            }
-        }
-        return arr;
-    }
-}
+//class Solution {
+//    public int[] solution(int[] arr, int[] query) {
+//        // copyOfRange(int[] original, int from, int to)
+//        // original: 복사할 원본 배열
+//        // from: 복사를 시작할 인덱스(포함o)
+//        // to: 복사를 끝낼 인덱스(포함x)
+//        
+//        for (int i = 0; i < query.length; i++) {
+//            int q = query[i];
+//            if (i % 2 == 0) {  // 짝수 인덱스
+//                arr = Arrays.copyOfRange(arr, 0, q + 1);  // arr의 앞부분을 잘라냄
+//            } else {  // 홀수 인덱스
+//                arr = Arrays.copyOfRange(arr, q, arr.length);  // 제일 앞부분 하나만 잘라냄
+//            }
+//        }
+//        return arr;
+//    }
+//}
 
 public class Day12 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		int[] slicer = {1, 5, 2};
@@ -200,10 +200,8 @@ public class Day12 {
 //		System.out.println(Arrays.toString(sol.solution(arr4)));
 		
 		// 5.
-		int[] arr = {0, 1, 2, 3, 4, 5};
-		int[] query = {4, 1, 2};
-		System.out.println(Arrays.toString(sol.solution(arr, query)));
-		
-		
+//		int[] arr = {0, 1, 2, 3, 4, 5};
+//		int[] query = {4, 1, 2};
+//		System.out.println(Arrays.toString(sol.solution(arr, query)));
 	}
 }
