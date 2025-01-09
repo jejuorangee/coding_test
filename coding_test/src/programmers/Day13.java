@@ -82,25 +82,25 @@ import java.util.List;
 //}
 
 // 5. 정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 마지막 원소까지 n개 간격으로 저장되어있는 원소들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-class Solution {
-    public List<Integer> solution(int[] num_list, int n) {
-       List<Integer> answer = new ArrayList<>();
-       
-       // 인덱스를 n 간격으로 선택하여 리스트에 추가
-       for (int i = 0; i < num_list.length; i++) {
-           if (i % n == 0) {
-               answer.add(num_list[i]);
-           }
-       }
-       
-       return answer;
-   }
-}
+//class Solution {
+//    public List<Integer> solution(int[] num_list, int n) {
+//       List<Integer> answer = new ArrayList<>();
+//       
+//       // 인덱스를 n 간격으로 선택하여 리스트에 추가
+//       for (int i = 0; i < num_list.length; i++) {
+//           if (i % n == 0) {
+//               answer.add(num_list[i]);
+//           }
+//       }
+//       
+//       return answer;
+//   }
+//}
 
 
 public class Day13 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		int[] num_list1 = {2, 1, 6};
@@ -151,14 +151,14 @@ public class Day13 {
 //		}
 		
 		// 5.
-		int[] num_list = {4, 2, 6, 1, 7, 6};
-		
-		for(int i : sol.solution(num_list, 2)) {
-			System.out.print(i);
-		}
-		System.out.println();
-		for(int j : sol.solution(num_list, 4)) {
-			System.out.print(j);
-		}
+//		int[] num_list = {4, 2, 6, 1, 7, 6};
+//		
+//		for(int i : sol.solution(num_list, 2)) {
+//			System.out.print(i);
+//		}
+//		System.out.println();
+//		for(int j : sol.solution(num_list, 4)) {
+//			System.out.print(j);
+//		}
 	}
 }
