@@ -120,24 +120,24 @@ import java.util.Arrays;
 
 // 5. 알파벳으로 이루어진 문자열 myString과 pat이 주어집니다. myString의 연속된 부분 문자열 중 pat이 존재하면 1을 그렇지 않으면 0을 return 하는 solution 함수를 완성해 주세요.
 //단, 알파벳 대문자와 소문자는 구분하지 않습니다.
-class Solution {
-    public int solution(String myString, String pat) {
-         // 대소문자 구분 없이 비교하기 위해 모두 소문자로 변환
-        myString = myString.toLowerCase();
-        pat = pat.toLowerCase();
-        
-        // myString에 pat이 포함되어 있으면 1 그렇지 않으면 0 반환
-        if (myString.contains(pat)) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-}
+//class Solution {
+//    public int solution(String myString, String pat) {
+//         // 대소문자 구분 없이 비교하기 위해 모두 소문자로 변환
+//        myString = myString.toLowerCase();
+//        pat = pat.toLowerCase();
+//        
+//        // myString에 pat이 포함되어 있으면 1 그렇지 않으면 0 반환
+//        if (myString.contains(pat)) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+//    }
+//}
 
 public class Day15 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		int[] arr = {1, 2, 3, 100, 99, 98};
@@ -167,8 +167,8 @@ public class Day15 {
 //        System.out.println(sol.solution(numList2));
 		
 		// 5.
-		System.out.println(sol.solution("AbCdEfG", "aBc"));
-        System.out.println(sol.solution("aaAA", "aaaaa"));
+//		System.out.println(sol.solution("AbCdEfG", "aBc"));
+//        System.out.println(sol.solution("aaAA", "aaaaa"));
 		
 	}
 }
