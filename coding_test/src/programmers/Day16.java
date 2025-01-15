@@ -58,28 +58,28 @@ import java.util.Arrays;
 
 // 5. 영소문자로 이루어진 문자열 my_string과 영소문자 1글자로 이루어진 문자열 alp가 매개변수로 주어질 때,
 // my_string에서 alp에 해당하는 모든 글자를 대문자로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
-class Solution {
-    public String solution(String my_string, String alp) {
-        StringBuilder result = new StringBuilder();
-        
-        for (int i = 0; i < my_string.length(); i++) {
-            char ch = my_string.charAt(i);
-            
-            // alp와 일치하는 문자가 있으면 대문자로 변환하여 추가
-            if (ch == alp.charAt(0)) {
-                result.append(Character.toUpperCase(ch));
-            } else {
-                result.append(ch);  // 일치하지 않으면 그대로 추가
-            }
-        }
-        
-        return result.toString();
-    }
-}
+//class Solution {
+//    public String solution(String my_string, String alp) {
+//        StringBuilder result = new StringBuilder();
+//        
+//        for (int i = 0; i < my_string.length(); i++) {
+//            char ch = my_string.charAt(i);
+//            
+//            // alp와 일치하는 문자가 있으면 대문자로 변환하여 추가
+//            if (ch == alp.charAt(0)) {
+//                result.append(Character.toUpperCase(ch));
+//            } else {
+//                result.append(ch);  // 일치하지 않으면 그대로 추가
+//            }
+//        }
+//        
+//        return result.toString();
+//    }
+//}
 
 public class Day16 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		System.out.println(sol.solution("aBcDeFg"));
@@ -101,7 +101,7 @@ public class Day16 {
 //		System.out.println(sol.solution("PrOgRaMmErS"));
 		
 		// 5.
-		System.out.println(sol.solution("programmers", "p"));
-		System.out.println(sol.solution("lowercase", "x"));
+//		System.out.println(sol.solution("programmers", "p"));
+//		System.out.println(sol.solution("lowercase", "x"));
 	}
 }
