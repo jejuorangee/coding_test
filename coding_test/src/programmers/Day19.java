@@ -134,36 +134,36 @@ import java.util.Set;
 //이미 어떤 수가 무작위로 주어질지 알고 있다고 가정하고, 실제 만들어질 길이 k의 배열을 예상해봅시다.
 //정수 배열 arr가 주어집니다. 문제에서의 무작위의 수는 arr에 저장된 순서대로 주어질 예정이라고 했을 때, 완성될 배열을 return 하는 solution 함수를 완성해 주세요.
 //단, 완성될 배열의 길이가 k보다 작으면 나머지 값을 전부 -1로 채워서 return 합니다.
-class Solution {
-    public int[] solution(int[] arr, int k) {
-        Set<Integer> seen = new HashSet<>();
-        List<Integer> resultList = new ArrayList<>();
-        
-        for (int num : arr) {
-            if (!seen.contains(num)) {
-                seen.add(num);
-                resultList.add(num);
-            }
-        }
-        
-        // 결과 배열의 길이가 k보다 작으면 -1
-        while (resultList.size() < k) {
-            resultList.add(-1);
-        }
-        
-        // 리스트를 배열로 변환
-        int[] answer = new int[k];
-        for (int i = 0; i < k; i++) {
-            answer[i] = resultList.get(i);
-        }
-        
-        return answer;
-    }
-}
+//class Solution {
+//    public int[] solution(int[] arr, int k) {
+//        Set<Integer> seen = new HashSet<>();
+//        List<Integer> resultList = new ArrayList<>();
+//        
+//        for (int num : arr) {
+//            if (!seen.contains(num)) {
+//                seen.add(num);
+//                resultList.add(num);
+//            }
+//        }
+//        
+//        // 결과 배열의 길이가 k보다 작으면 -1
+//        while (resultList.size() < k) {
+//            resultList.add(-1);
+//        }
+//        
+//        // 리스트를 배열로 변환
+//        int[] answer = new int[k];
+//        for (int i = 0; i < k; i++) {
+//            answer[i] = resultList.get(i);
+//        }
+//        
+//        return answer;
+//    }
+//}
 
 public class Day19 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		System.out.println(Arrays.toString(sol.solution("baconlettucetomato")));
@@ -195,10 +195,10 @@ public class Day19 {
 //		System.out.println(Arrays.toString(sol.solution(arr3)));
 		
 		// 5.
-		int[] arr1 = {0, 1, 1, 2, 2, 3};
-		int[] arr2 = {0, 1, 1, 1, 1};
-		
-		System.out.println(Arrays.toString(sol.solution(arr1, 3)));
-		System.out.println(Arrays.toString(sol.solution(arr2, 4)));
+//		int[] arr1 = {0, 1, 1, 2, 2, 3};
+//		int[] arr2 = {0, 1, 1, 1, 1};
+//		
+//		System.out.println(Arrays.toString(sol.solution(arr1, 3)));
+//		System.out.println(Arrays.toString(sol.solution(arr2, 4)));
 	}
 }
