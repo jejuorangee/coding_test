@@ -109,19 +109,19 @@ import java.util.Map;
 
 // 5. 정수로 이루어진 리스트 num_list가 주어집니다. 
 // num_list에서 가장 작은 5개의 수를 오름차순으로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-class Solution {
-    public int[] solution(int[] num_list) {
-        // num_list를 오름차순으로 정렬
-        Arrays.sort(num_list);
-        
-        // 가장 작은 5개의 수를 추출
-        return Arrays.copyOfRange(num_list, 0, 5);
-    }
-}
+//class Solution {
+//    public int[] solution(int[] num_list) {
+//        // num_list를 오름차순으로 정렬
+//        Arrays.sort(num_list);
+//        
+//        // 가장 작은 5개의 수를 추출
+//        return Arrays.copyOfRange(num_list, 0, 5);
+//    }
+//}
 
 public class Day20 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		int[] arr1 = {1, 2, 3, 4, 5, 6};
@@ -156,9 +156,8 @@ public class Day20 {
 //		System.out.println(Arrays.toString(sol.solution(arr2, 100)));
 		
 		// 5.
-		int[] num_list = {12, 4, 15, 46, 38, 1, 14};
-		
-		System.out.println(Arrays.toString(sol.solution(num_list)));
+//		int[] num_list = {12, 4, 15, 46, 38, 1, 14};
+//		System.out.println(Arrays.toString(sol.solution(num_list)));
 		
 	}
 }
