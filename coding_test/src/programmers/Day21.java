@@ -67,15 +67,15 @@ import java.util.List;
 //}
 
 // 5. 숫자로만 이루어진 문자열 n_str이 주어질 때, n_str을 정수로 변환하여 return하도록 solution 함수를 완성해주세요.
-class Solution {
-    public int solution(String n_str) {
-        return Integer.parseInt(n_str);
-    }
-}
+//class Solution {
+//    public int solution(String n_str) {
+//        return Integer.parseInt(n_str);
+//    }
+//}
 
 public class Day21 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		int[] num_list = {12, 4, 15, 46, 38, 1, 14, 56, 32, 10};
@@ -105,7 +105,7 @@ public class Day21 {
 //		System.out.println(sol.solution("1000000"));
 		
 		// 5.
-		System.out.println("10");
-		System.out.println("8542");
+//		System.out.println(sol.solution("10"));
+//		System.out.println(sol.solution("8542"));
 	}
 }
