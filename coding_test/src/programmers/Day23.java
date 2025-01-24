@@ -69,35 +69,35 @@ package programmers;
 
 // 5. 정수 배열 date1과 date2가 주어집니다. 두 배열은 각각 날짜를 나타내며 [year, month, day] 꼴로 주어집니다. 각 배열에서 year는 연도를, month는 월을, day는 날짜를 나타냅니다.
 // 만약 date1이 date2보다 앞서는 날짜라면 1을, 아니면 0을 return 하는 solution 함수를 완성해 주세요.
-class Solution {
-    public int solution(int[] date1, int[] date2) {
-         // year 비교
-        if (date1[0] < date2[0]) {
-            return 1;
-        } else if (date1[0] > date2[0]) {
-            return 0;
-        }
-        
-        // year가 같으면 month 비교
-        if (date1[1] < date2[1]) {
-            return 1;
-        } else if (date1[1] > date2[1]) {
-            return 0;
-        }
-        
-        // year와 month가 같으면 day 비교
-        if (date1[2] < date2[2]) {
-            return 1;
-        }
-        
-        // 모든 비교가 같다면 date1은 date2와 같거나 뒤에 있음
-        return 0;
-    }
-}
+//class Solution {
+//    public int solution(int[] date1, int[] date2) {
+//         // year 비교
+//        if (date1[0] < date2[0]) {
+//            return 1;
+//        } else if (date1[0] > date2[0]) {
+//            return 0;
+//        }
+//        
+//        // year가 같으면 month 비교
+//        if (date1[1] < date2[1]) {
+//            return 1;
+//        } else if (date1[1] > date2[1]) {
+//            return 0;
+//        }
+//        
+//        // year와 month가 같으면 day 비교
+//        if (date1[2] < date2[2]) {
+//            return 1;
+//        }
+//        
+//        // 모든 비교가 같다면 date1은 date2와 같거나 뒤에 있음
+//        return 0;
+//    }
+//}
 
 public class Day23 {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
+//		Solution sol = new Solution();
 		
 		// 1.
 //		System.out.println(sol.solution("abc", "aabcc"));
@@ -123,13 +123,13 @@ public class Day23 {
 //		System.out.println(sol.solution(2, 4));
 		
 		// 5.
-		int[] date1_1 = {2021, 12, 28};
-		int[] date1_2 = {1024, 10, 24};
-		
-		int[] date2_1 = {2021, 12, 29};
-		int[] date2_2 = {1024, 10, 24};
-		
-		System.out.println(sol.solution(date1_1, date2_1));
-		System.out.println(sol.solution(date2_1, date2_2));
+//		int[] date1_1 = {2021, 12, 28};
+//		int[] date1_2 = {1024, 10, 24};
+//		
+//		int[] date2_1 = {2021, 12, 29};
+//		int[] date2_2 = {1024, 10, 24};
+//		
+//		System.out.println(sol.solution(date1_1, date2_1));
+//		System.out.println(sol.solution(date2_1, date2_2));
 	}
 }
